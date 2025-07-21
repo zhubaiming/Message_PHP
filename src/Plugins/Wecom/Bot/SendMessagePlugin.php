@@ -8,7 +8,6 @@ use Hongyi\Designer\Contracts\PluginInterface;
 use Hongyi\Designer\Packers\BodyPacker;
 use Hongyi\Designer\Patchwerk;
 use Hongyi\Message\Services\Wecom;
-use function get_config;
 
 class SendMessagePlugin implements PluginInterface
 {
@@ -16,7 +15,7 @@ class SendMessagePlugin implements PluginInterface
     {
         $patchwerk->setPacker(new BodyPacker());
 
-        $config = get_config('wecom');
+        $config = Wecom::getConfig();
 
         $patchwerk->mergeParameters([
             '_method' => 'POST',
