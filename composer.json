@@ -3,7 +3,7 @@
   "description": "消息通知(机器人类型)集合，集合国内外各大平台的不同类型机器人的消息推送，支持每个类型机器人的不同消息体类型的推送和回复",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     {
       "name": "zhubaiming",
