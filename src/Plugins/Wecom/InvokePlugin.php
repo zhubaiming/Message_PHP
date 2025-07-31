@@ -13,7 +13,7 @@ class InvokePlugin implements PluginInterface
     {
         $patchwerk = $next($patchwerk);
 
-        $errcode = $patchwerk->getDestination()['errcode'];
+        $errcode = $patchwerk->getDestination()['body']['errcode'];
 
         if (0 !== $errcode) {
             throw new InvalidResponseException($this->verifyErrCode($errcode), Exception::RESPONSE_ERROR);

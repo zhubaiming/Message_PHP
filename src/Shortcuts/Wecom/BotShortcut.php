@@ -11,6 +11,7 @@ use Hongyi\Designer\Plugins\ParserPlugin;
 use Hongyi\Designer\Plugins\StartPlugin;
 use Hongyi\Message\Plugins\Wecom\BeginPlugin;
 use Hongyi\Message\Plugins\Wecom\Bot\SendMessagePlugin;
+use Hongyi\Message\Plugins\Wecom\InvokePlugin;
 
 class BotShortcut implements ShortcutInterface
 {
@@ -22,6 +23,7 @@ class BotShortcut implements ShortcutInterface
             SendMessagePlugin::class,
             AddBodyToPayloadPlugin::class,
             AddRadarPlugin::class,
+            InvokePlugin::class,
             ParserPlugin::class
         ];
     }
